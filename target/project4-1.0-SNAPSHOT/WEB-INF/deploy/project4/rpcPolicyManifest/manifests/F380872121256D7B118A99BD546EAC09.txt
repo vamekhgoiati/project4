@@ -1,0 +1,2 @@
+serviceClass: com.vamekh.client.TemplateService
+path: AE6E6FD654896D9785C93F18A171CB84.gwt.rpc

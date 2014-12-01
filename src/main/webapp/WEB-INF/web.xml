@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>com.vamekh.server.GreetingServiceImpl</servlet-class>
+  </servlet>
+ 
+  <servlet>
+		<servlet-name>templateServlet</servlet-name>
+		<servlet-class>com.vamekh.server.TemplateServiceImpl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>institutionsServlet</servlet-name>
+		<servlet-class>com.vamekh.server.InstitutionServiceImpl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>typeServlet</servlet-name>
+		<servlet-class>com.vamekh.server.InstitutionTypeServiceImpl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>returnServlet</servlet-name>
+		<servlet-class>com.vamekh.server.ReturnServiceImpl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>fileStoreServlet</servlet-name>
+		<servlet-class>com.vamekh.server.FileStoreServiceImpl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>fileUploadServlet</servlet-name>
+		<servlet-class>com.vamekh.server.FileUploadServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>fileDownloadServlet</servlet-name>
+		<servlet-class>com.vamekh.server.FileDownloadServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>templateServlet</servlet-name>
+		<url-pattern>/project4/templateService</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>institutionsServlet</servlet-name>
+		<url-pattern>/project4/institutionService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>typeServlet</servlet-name>
+		<url-pattern>/project4/typeService</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>returnServlet</servlet-name>
+		<url-pattern>/project4/returnService</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>fileStoreServlet</servlet-name>
+		<url-pattern>/project4/fileStoreService</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>fileUploadServlet</servlet-name>
+		<url-pattern>/project4/fileUpload</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet-mapping>
+	    <servlet-name>greetServlet</servlet-name>
+	    <url-pattern>/project4/greet</url-pattern>
+	  </servlet-mapping>
+	  
+	 <servlet-mapping>
+	 	<servlet-name>fileDownloadServlet</servlet-name>
+	 	<url-pattern>/project4/fileDownload</url-pattern>
+	 </servlet-mapping>
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>project4.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

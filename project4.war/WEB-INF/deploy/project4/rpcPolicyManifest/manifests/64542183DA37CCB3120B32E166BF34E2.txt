@@ -1,0 +1,2 @@
+serviceClass: com.vamekh.client.FileStoreService
+path: DBB72D26941005E900D62A3A0D71DD97.gwt.rpc

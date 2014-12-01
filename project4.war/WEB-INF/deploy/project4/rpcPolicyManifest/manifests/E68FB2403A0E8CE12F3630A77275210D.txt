@@ -1,0 +1,2 @@
+serviceClass: com.vamekh.client.ReturnService
+path: DF59DEF689380053967E30C92480AF83.gwt.rpc
